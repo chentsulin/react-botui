@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 
-> React bindings for BotUI
+> React bindings for [BotUI](https://github.com/botui/botui)
 
 ## Install
 
