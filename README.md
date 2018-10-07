@@ -1,7 +1,6 @@
 # react-botui
 
 [![NPM version][npm-image]][npm-url]
-[![Dependency Status][david_img]][david_site]
 
 > React bindings for BotUI
 
@@ -83,7 +82,5 @@ Checkout full examples [here](./examples).
 
 MIT © [C.T. Lin](https://github.com/chentsulin/react-botui)
 
-[npm-image]: https://badge.fury.io/js/@chentsulin/react-botui.svg
+[npm-image]: https://img.shields.io/npm/v/@chentsulin/react-botui.svg
 [npm-url]: https://npmjs.org/package/@chentsulin/react-botui
-[david_img]: https://david-dm.org/chentsulin/react-botui.svg
-[david_site]: https://david-dm.org/chentsulin/react-botui
