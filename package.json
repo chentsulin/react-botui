@@ -1,0 +1,55 @@
+{
+  "name": "react-botui",
+  "version": "0.0.1",
+  "description": "React bindings for BotUI",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "eslint src *.js",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "npm run clean && babel src --out-dir lib --ignore __tests__",
+    "preversion": "npm run clean && npm run lint",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags && npm run clean",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "files": [
+    "lib/"
+  ],
+  "keywords": [
+    "react",
+    "bot",
+    "botui",
+    "component",
+    "react-component"
+  ],
+  "author": {
+    "name": "C.T. Lin",
+    "email": "chentsulin@gmail.com",
+    "url": "github.com/chentsulin/react-botui"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "botui": "^0.3.4",
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "botui": "^0.3.4",
+    "eslint": "^5.6.1",
+    "eslint-config-yoctol": "^0.18.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.3.0",
+    "react": "^16.5.2",
+    "rimraf": "^2.6.2"
+  }
+}
