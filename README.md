@@ -15,7 +15,7 @@ $ npm install react-botui botui
 
 ```js
 import React, { Component } from 'react';
-import BotUI from 'react-botui';
+import BotUI from '@chentsulin/react-botui';
 
 class App extends Component {
   state = {
@@ -83,7 +83,7 @@ Checkout full examples [here](./examples).
 
 MIT © [C.T. Lin](https://github.com/chentsulin/react-botui)
 
-[npm-image]: https://badge.fury.io/js/react-botui.svg
-[npm-url]: https://npmjs.org/package/react-botui
+[npm-image]: https://badge.fury.io/js/@chentsulin/react-botui.svg
+[npm-url]: https://npmjs.org/package/@chentsulin/react-botui
 [david_img]: https://david-dm.org/chentsulin/react-botui.svg
 [david_site]: https://david-dm.org/chentsulin/react-botui

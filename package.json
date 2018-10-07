@@ -1,5 +1,5 @@
 {
-  "name": "react-botui",
+  "name": "@chentsulin/react-botui",
   "version": "0.1.0",
   "description": "React bindings for BotUI",
   "main": "lib/index.js",
