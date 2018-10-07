@@ -7,11 +7,10 @@
     "clean": "rimraf lib",
     "lint": "eslint src *.js",
     "lint:fix": "npm run lint -- --fix",
+    "test": "npm run lint",
     "build": "npm run clean && babel src --out-dir lib --ignore __tests__",
-    "preversion": "npm run clean && npm run lint",
-    "version": "npm run build",
-    "postversion": "git push && git push --tags && npm run clean",
-    "prepublishOnly": "npm run clean && npm run build"
+    "preversion": "npm run test",
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "lib/"
