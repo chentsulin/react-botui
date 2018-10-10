@@ -42,17 +42,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <BotUI
-          messages={this.state.messages}
-          action={{
-            type: 'text',
-            action: {
-              placeholder: 'Enter your text here',
-            },
-          }}
-          onAction={this.handleAction}
-        />
-        <button onClick={this.handleReset}>Reset</button>
+        <header className="App-header">
+          <BotUI
+            messages={this.state.messages}
+            action={{
+              type: 'text',
+              action: {
+                placeholder: 'Enter your text here',
+              },
+            }}
+            onAction={this.handleAction}
+          />
+          <button className="App-button" onClick={this.handleReset}>
+            Reset
+          </button>
+        </header>
       </div>
     );
   }
