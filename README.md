@@ -4,6 +4,8 @@
 
 > React bindings for [BotUI](https://github.com/botui/botui)
 
+![](https://user-images.githubusercontent.com/3382565/46710923-b0dbb580-cc7c-11e8-9bd1-dcf6940f7a8f.gif)
+
 ## Install
 
 ```
