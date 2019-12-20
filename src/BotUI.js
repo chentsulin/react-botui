@@ -78,7 +78,7 @@ class BotUI extends Component {
 }
 
 BotUI.propTypes = {
-  action: PropTypes.shape(PropTypes.object),
+  action: PropTypes.object, // eslint-disable-line react/forbid-prop-types
   className: PropTypes.string,
   messages: PropTypes.arrayOf(PropTypes.object).isRequired,
   onAction: PropTypes.func,
