@@ -1,6 +1,6 @@
 {
   "name": "@chentsulin/react-botui",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "React bindings for BotUI",
   "main": "lib/index.js",
   "scripts": {
