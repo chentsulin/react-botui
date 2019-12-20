@@ -60,7 +60,7 @@ export default class BotUI extends Component {
   }
 
   render() {
-    const { className, ...otherProps } = this.props;
+    const { className, messages, action, onAction, ...otherProps } = this.props;
     const classNames = ['botui-app-container'];
 
     if (className) {
