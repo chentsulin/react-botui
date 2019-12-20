@@ -1,12 +1,13 @@
 /* eslint-disable no-await-in-loop */
 
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import _BotUI from 'botui';
 
 import 'botui/build/botui-theme-default.css';
 import 'botui/build/botui.min.css';
 
-export default class BotUI extends Component {
+class BotUI extends Component {
   async componentDidMount() {
     this.botui = new _BotUI('botui-app');
 
@@ -68,9 +69,25 @@ export default class BotUI extends Component {
     }
 
     return (
+      // eslint-disable-next-line react/jsx-props-no-spreading
       <div className={classNames.join(' ')} id="botui-app" {...otherProps}>
         <bot-ui />
       </div>
     );
   }
 }
+
+BotUI.propTypes = {
+  action: PropTypes.shape(PropTypes.object),
+  className: PropTypes.string,
+  messages: PropTypes.arrayOf(PropTypes.object).isRequired,
+  onAction: PropTypes.func,
+};
+
+BotUI.defaultProps = {
+  className: '',
+  action: null,
+  onAction: () => {},
+};
+
+export default BotUI;
